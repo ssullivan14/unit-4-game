@@ -7,14 +7,18 @@
         <link rel="reset stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
         <title>Crystal Game</title>
     </head>
 
     <body>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid"> <source src= "Diamonds - 5128.mp4" type= video/mp4 >
             <div class="container">
                   <h1 class="display-4">Crystals Collectors!</h1>
-                  <p class="lead">You will be given a random number at the start of the game</p>
+                  <p>You will be given a random number at the start of the game</p>
                   <p>They're four crystals below. By clicking on a crystal you will add a specific amount of point to your total score.</p>
                   <p>You win the ame by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
                   <p>The value of each crystal is hidden from you until you click on it</p>
@@ -26,13 +30,13 @@
             <div class = "row">
                 <div class = "col-md-2"></div>
                 <div class = "col-md-4">
-                        Random Number: <button id="random-button" class="btn btn-secondary btn-lg fa fa-question">Click Here to Start</button>
+                        <p>Random Number: <button id="random-button" class="btn btn-secondary btn-lg fa fa-question">Click Here to Start</button></p>
                     
                 </div>
 
                 <div class = "col-md-3">
-                    <p>Wins:</p>
-                    <p id = "wins"></p>
+                    <p>Wins: <span id= "wins"></span></p>
+                    
                     <br>
                 </div>
             </div>
@@ -40,13 +44,13 @@
             <div class = "row">
                 <div class = "col-md-2"></div>
                 <div class = "col-md-4">
-                    <p class ="totalScore">Your total score is: </p>
-                            <p class="counter"> </p>
+                    <p id ="totalScore">Your total score is:  <span id ="counter"> </span></p>
+                           
                 </div>
 
                 <div class = "col-md-3">        
-                    <p>Losses</p>
-                    <p id = "losses"> </p>
+                    <p>Losses <span id = "losses"> </span></p>
+                    
                 </div>
             </div>
         </div>
@@ -79,10 +83,7 @@
                 <a class="navbar-footer">Copywrite © Sara Sullivan</a>
             </div>
         </footer>
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
+        
 
         <script type="text/javascript" src="assets/javascript/game.js"></script>
         
