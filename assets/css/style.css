@@ -1,0 +1,21 @@
+#yellow {
+    border: 2px solid red;
+    height: 50px;
+}
+
+#purple {
+    height: 50px;
+}
+
+#red {
+    height: 50px;
+}
+
+#orange {
+    height: 50px;
+}
+
+footer {
+    text-align: center;
+    font-size: 10pt;
+}
