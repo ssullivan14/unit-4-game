@@ -11,6 +11,7 @@
         src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
+        
         <title>Crystal Game</title>
     </head>
 
@@ -18,11 +19,12 @@
         <div class="jumbotron jumbotron-fluid"> <source src= "Diamonds - 5128.mp4" type= video/mp4 >
             <div class="container">
                   <h1 class="display-4">Crystals Collectors!</h1>
-                  <p>You will be given a random number at the start of the game</p>
-                  <p>They're four crystals below. By clicking on a crystal you will add a specific amount of point to your total score.</p>
-                  <p>You win the ame by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-                  <p>The value of each crystal is hidden from you until you click on it</p>
+                  <p>Click on the button to start</p>
+                  <p>They're four crystals below. By clicking on a crystal you will add a specific amount of points to your score.</p>
+                  <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                  <p>The value of each crystal is hidden and will add to your score when you click on the gem.</p>
                   <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                  <p>Good Luck!</p>
             </div>
         </div>
 
@@ -30,24 +32,25 @@
             <div class = "row">
                 <div class = "col-md-2"></div>
                 <div class = "col-md-4">
+                    <!--displays button to push to get random number-->
                         <p>Random Number: <button id="random-button" class="btn btn-secondary btn-lg fa fa-question">Click Here to Start</button></p>
                     
                 </div>
-
+                <!--displays wins-->
                 <div class = "col-md-3">
                     <p>Wins: <span id= "wins"></span></p>
                     
                     <br>
                 </div>
             </div>
-            
             <div class = "row">
                 <div class = "col-md-2"></div>
                 <div class = "col-md-4">
-                    <p id ="totalScore">Your total score is:  <span id ="counter"> </span></p>
+                    <!--keeps count of the score each time you click on gems-->
+                    <p id ="scoreCounter">Score:  <span id ="counter"> </span></p>
                            
                 </div>
-
+                <!--displays losses-->
                 <div class = "col-md-3">        
                     <p>Losses <span id = "losses"> </span></p>
                     
@@ -57,6 +60,7 @@
         
         <br>
         <br>
+        <!--displays gems-->
         <div class = "containter-2">
             <div class = "row">
                 <div class = "col-md-2"></div>
